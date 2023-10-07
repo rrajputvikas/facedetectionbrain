@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import Navigation from './components/Navigation/Navigation';
-import Logo from './components/Logo/Logo';
-import Rank from './components/Rank/Rank';
-import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+import React, { Component } from "react";
+import Navigation from "./components/Navigation/Navigation";
+import Logo from "./components/Logo/Logo";
+import Rank from "./components/Rank/Rank";
+import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import './App.css';
+import "./App.css";
 
 // Particles Properties
 const particlesOptions = {
@@ -72,8 +72,16 @@ class App extends Component {
     await loadSlim(engine);
   }
 
+  onInputChange = (event) => {
+    console.log(event.target.value);
+  };
+
+  onButtonSubmit = () => {
+    console.log("Submit");
+  };
+
   render() {
-    return(
+    return (
       <div>
         {/* Particles Component */}
         <Particles
@@ -86,7 +94,10 @@ class App extends Component {
         <Navigation />
         <Logo />
         <Rank />
-        <ImageLinkForm />
+        <ImageLinkForm
+          onInputChange={this.onInputChange}
+          onButtonSubmit={this.onButtonSubmit}
+        />
       </div>
     );
   }

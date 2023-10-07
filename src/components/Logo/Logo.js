@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <div className="m-5 mt-0 mb-2">
       <Tilt
-        className="Logo rounded-4 shadow-lg"
+        className="Logo rounded-3 shadow-lg"
         options={{
           transition: true,
           easing: "cubic-bezier(.03,.98,.52,.99)",
