@@ -1,0 +1,31 @@
+.img-adjust {
+    width: 600px;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .img-adjust {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img-adjust {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .img-adjust {
+        width: 300px;
+    }
+}
+
+.bounding-box {
+    position: absolute;
+    box-shadow: 0 0 0 3px #149df2 inset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}

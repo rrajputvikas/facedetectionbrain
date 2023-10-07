@@ -8,3 +8,15 @@ body {
 button {
   cursor: pointer;
 }
+
+input {
+  border-color: #9a3fef !important;
+  box-shadow: inset 1px 1px 10px -4px black !important;
+}
+input[type='checkbox'] {
+  border: #9a3fef !important;
+  box-shadow: inset 1px 1px 5px -3px black !important;
+}
+input[type='checkbox']:checked {
+  background-color: #9a3fef !important;
+}
